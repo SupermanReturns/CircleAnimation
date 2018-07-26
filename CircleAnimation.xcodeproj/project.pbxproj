@@ -15,6 +15,9 @@
 		CF371198210968C100C37BB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF371197210968C100C37BB7 /* main.m */; };
 		CF3711A2210968C100C37BB7 /* CircleAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3711A1210968C100C37BB7 /* CircleAnimationTests.m */; };
 		CF3711AD210968C100C37BB7 /* CircleAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3711AC210968C100C37BB7 /* CircleAnimationUITests.m */; };
+		CF3711BF21096A2700C37BB7 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3711BB21096A2600C37BB7 /* UIColor+Extensions.m */; };
+		CF3711C021096A2700C37BB7 /* UIView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3711BC21096A2600C37BB7 /* UIView+Extensions.m */; };
+		CF3711C321096AEE00C37BB7 /* CircleAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3711C221096AEE00C37BB7 /* CircleAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		CF3711A8210968C100C37BB7 /* CircleAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3711AC210968C100C37BB7 /* CircleAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleAnimationUITests.m; sourceTree = "<group>"; };
 		CF3711AE210968C100C37BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3711BB21096A2600C37BB7 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
+		CF3711BC21096A2600C37BB7 /* UIView+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extensions.m"; sourceTree = "<group>"; };
+		CF3711BD21096A2700C37BB7 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
+		CF3711BE21096A2700C37BB7 /* UIView+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extensions.h"; sourceTree = "<group>"; };
+		CF3711C121096AEE00C37BB7 /* CircleAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleAnimationView.h; sourceTree = "<group>"; };
+		CF3711C221096AEE00C37BB7 /* CircleAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleAnimationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,13 @@
 		CF371187210968BF00C37BB7 /* CircleAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				CF3711BA21096A1A00C37BB7 /* Category */,
 				CF371188210968BF00C37BB7 /* AppDelegate.h */,
 				CF371189210968BF00C37BB7 /* AppDelegate.m */,
 				CF37118B210968BF00C37BB7 /* ViewController.h */,
 				CF37118C210968BF00C37BB7 /* ViewController.m */,
+				CF3711C121096AEE00C37BB7 /* CircleAnimationView.h */,
+				CF3711C221096AEE00C37BB7 /* CircleAnimationView.m */,
 				CF37118E210968BF00C37BB7 /* Main.storyboard */,
 				CF371191210968C100C37BB7 /* Assets.xcassets */,
 				CF371193210968C100C37BB7 /* LaunchScreen.storyboard */,
@@ -130,6 +142,17 @@
 				CF3711AE210968C100C37BB7 /* Info.plist */,
 			);
 			path = CircleAnimationUITests;
+			sourceTree = "<group>";
+		};
+		CF3711BA21096A1A00C37BB7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF3711BD21096A2700C37BB7 /* UIColor+Extensions.h */,
+				CF3711BB21096A2600C37BB7 /* UIColor+Extensions.m */,
+				CF3711BE21096A2700C37BB7 /* UIView+Extensions.h */,
+				CF3711BC21096A2600C37BB7 /* UIView+Extensions.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +287,10 @@
 			files = (
 				CF37118D210968BF00C37BB7 /* ViewController.m in Sources */,
 				CF371198210968C100C37BB7 /* main.m in Sources */,
+				CF3711C021096A2700C37BB7 /* UIView+Extensions.m in Sources */,
 				CF37118A210968BF00C37BB7 /* AppDelegate.m in Sources */,
+				CF3711BF21096A2700C37BB7 /* UIColor+Extensions.m in Sources */,
+				CF3711C321096AEE00C37BB7 /* CircleAnimationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = CircleAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = CircleAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
