@@ -126,7 +126,7 @@ static const CGFloat kAnimationTime = 2.f;
     self.markerImageView.frame = CGRectMake(-100, self.height, kMarkerRadius, kMarkerRadius);
     self.markerImageView.layer.cornerRadius = self.markerImageView.frame.size.height / 2;
     [self addSubview:self.markerImageView];
-    
+    //给图层添加动画 'key'键可能是任意的string
     [self.markerImageView.layer addAnimation:pathAnimation forKey:@"moveMarker"];
 }
 
