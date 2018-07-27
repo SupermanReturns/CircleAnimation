@@ -40,7 +40,7 @@
 }
 - (void)onStareButtonClick {
     
-    self.circleProgressView.percent = 90.f;
+    self.circleProgressView.percent = 80.f;
 }
 
 
